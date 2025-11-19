@@ -5,43 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+
+    <!-- CSS file -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!-- ================= CONTAINER ================= -->
     <div class="container">
         <h2>Currency Converter</h2>
         <form action="">
+            <!-- Amount Input -->
             <div class="amount">
                 <p>Enter Amount</p>
                 <input value="100" type="text">
             </div>
+
+            <!-- From and To Dropdowns -->
             <div class="dropdown">
+                <!-- FROM currency -->
                 <div class="from">
                     <p>From</p>
                     <div class="select-containers">
                         <img src="https://flagsapi.com/US/flat/64.png">
-                        <select name="from" id=""></select>
+                        <select name="from"></select>
                     </div>
                 </div>
+
+                <!-- Swap icon -->
                 <i class="fa-solid fa-right-left"></i>
+
+                <!-- TO currency -->
                 <div class="to">
                     <p>To</p>
                     <div class="select-containers">
                         <img src="https://flagsapi.com/IN/flat/64.png">
-                        <select name="to" id=""></select>
+                        <select name="to"></select>
                     </div>
                 </div>
             </div>
+
+            <!-- Conversion result -->
             <div class="msg">1USD = 80INR</div>
+
+            <!-- Convert button -->
             <button>Get Exchange rate</button>
         </form>
     </div>
-    <script src="codes.js"></script>
-    <script src="script.js"></script>
+
+    <!-- JS files -->
+    <script src="codes.js"></script> <!-- Contains countryList -->
+    <script src="script.js"></script> <!-- Main conversion logic -->
 </body>
 
 </html>
